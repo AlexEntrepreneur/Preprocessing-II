@@ -1,7 +1,4 @@
 .home {
-  @media @mobile {
-    padding: 0 25px;
-  }
 
   .content-section {
     margin: 30px 0;
@@ -14,7 +11,7 @@
     .text-content {
       width: 48%;
       padding-right: 1%;
-      @media @mobile {
+      @media @tablet {
         width: 100%;
         padding: 0;
       }
@@ -23,14 +20,14 @@
     .img-content {
       width: 48%;
       padding-left: 1%;
-      @media @mobile {
+      @media @tablet {
         width: 100%;
         padding: 0;
       }
 
       img {
         border-radius: 10px;
-        @media @mobile {
+        @media @tablet {
           width: 100%;
         }
       }
@@ -44,7 +41,7 @@
     .text-content {
       padding-left: 1%;
       padding-right: 0;
-      @media @mobile {
+      @media @tablet {
         order: -1;
       }
     }
@@ -58,7 +55,7 @@
   .content-destination {
     width: 75%;
     margin: 0 auto 30px;
-    @media @mobile {
+    @media @tablet {
       width: 100%;
       margin: 0 0 30px 0;
     }
@@ -73,16 +70,19 @@
     border-top: 2px dashed @navigation-border;
     display: flex;
     justify-content: space-between;
-    @media @mobile {
+    @media @tablet {
       flex-direction: column;
       justify-content: flex-start;
       padding: 30px 45px;
+    }
+    @media @mobile {
+      padding: 30px 0;
     }
 
     .destination {
       width: 30%;
       margin-bottom: 30px;
-      @media @mobile {
+      @media @tablet {
         width: 100%;
       }
     }
