@@ -34,6 +34,16 @@ p {
   padding-bottom: 10px;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+  font-size: 1.6rem;
+}
+
+figure {
+  margin-bottom: 20px;
+}
+
 img {
   max-width: 100%;
   height: auto;
@@ -43,4 +53,12 @@ img {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
+  @media @content-width {
+    padding: 0 25px;
+    max-width: 100%;
+  }
+}
+
+.btn {
+  .button-style();
 }
